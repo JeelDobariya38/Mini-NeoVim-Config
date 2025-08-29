@@ -69,3 +69,4 @@ NVIM_APPNAME=nvim-dev nvim
 ```bash
 rm -rf ~/.config/nvim-dev
 ```
+
