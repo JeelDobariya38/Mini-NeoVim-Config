@@ -42,6 +42,9 @@ nvim
 
 ## Updateing
 
+> [!WARNING]
+> **You want able to revert back..** All your nvim config will set to latest.. for more precious guide vist [docs/updating](docs/updating.md).
+
 ### Windows
 
 ```powershell
