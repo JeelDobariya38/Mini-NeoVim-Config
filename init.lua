@@ -1,6 +1,7 @@
-vim.cmd("let g:netrw_liststyle = 3")
+vim.cmd("let g:netrw_liststyle = 3") -- nvim styling.
 
-local opt = vim.opt
+local opt = vim.opt -- for consiziness.
 
-opt.clipboard = "unnamedplus"
+-- clipboard settings
+opt.clipboard:append("unnamedplus") -- set system clipboard as defualt.
 
