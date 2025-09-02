@@ -9,8 +9,15 @@ opt.expandtab = true
 opt.autoindent = true
 opt.smartindent = true
 
+-- line wrapping
+opt.wrap = false
+
 -- no mouse
 opt.mouse = ""
+
+-- search settings
+opt.ignorecase = true
+opt.smartcase = true
 
 -- clipboard settings
 opt.clipboard:append("unnamedplus") -- set system clipboard as defualt.
