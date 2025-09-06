@@ -30,6 +30,14 @@ opt.signcolumn = "auto"
 opt.wrap = false
 
 
+-- no arrow keys
+vim.keymap.set({'n', 'v', 's', 'o'}, '<Up>', '<cmd>echo "Nop! No up arrow for you use k!!!"<CR>', {desc = "Hardcore neovim", noremap = true})
+vim.keymap.set({'n', 'v', 's', 'o'}, '<Down>', '<cmd>echo "Nop! No down arrow for you use j!!!"<CR>', {desc = "Hardcore neovim", noremap = true})
+vim.keymap.set({'n', 'v', 's', 'o'}, '<Left>', '<cmd>echo "Nop! No left arrow for you use h!!!"<CR>', {desc = "Hardcore neovim", noremap = true})
+vim.keymap.set({'n', 'v', 's', 'o'}, '<Right>', '<cmd>echo "Nop! No right arrow for you use l!!!"<CR>', {desc = "Hardcore neovim", noremap = true})
+
+
+
 -- no mouse
 opt.mouse = ""
 
