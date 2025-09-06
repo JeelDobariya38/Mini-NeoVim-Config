@@ -1,6 +1,6 @@
 # Mini NeoVim Config
 
-My pretty minimal neovim config....
+My pretty minimal neovim config, that I can use for coding & have consistent experience through out devices....
 
 ## Getting Started (Installation)
 
@@ -11,33 +11,13 @@ Neovim: [Install](https://github.com/neovim/neovim/blob/master/INSTALL.md)
 ### Windows
 
 ```powershell
-winget install Neovim.Neovim
-```
-
-```powershell
-git clone "https://github.com/JeelDobariya38/Mini-NeoVim-Config.git" "$env:LOCALAPPDATA\nvim"
-
-Remove-Item $env:LOCALAPPDATA\nvim\.git -Recurse -Force
-```
-
-```powershell
-nvim
+curl -sL https://raw.githubusercontent.com/JeelDobariya38/Mini-NeoVim-Config/main/scripts/install.ps1 | powershell
 ```
 
 ### Linux/MacOS
 
 ```bash
-brew install neovim
-```
-
-```bash
-git clone "https://github.com/JeelDobariya38/Mini-NeoVim-Config.git" ~/.config/nvim
-
-rm -rf ~/.config/nvim/.git
-```
-
-```bash
-nvim
+curl -sL https://raw.githubusercontent.com/JeelDobariya38/Mini-NeoVim-Config/main/scripts/install.bash | bash
 ```
 
 ## Updateing
