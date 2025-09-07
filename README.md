@@ -2,44 +2,43 @@
 
 My pretty minimal neovim config, that I can use for coding & have consistent experience through out devices....
 
-## Getting Started (Installation)
-
-### Prerequisites
+## Prerequisites
 
 Neovim: [Install](https://github.com/neovim/neovim/blob/master/INSTALL.md)
+Nerdfont: [brew install --cask font-meslo-lg-nerd-font]
+Node Js: [brew install node]
+Ripgrep: [https://github.com/BurntSushi/ripgrep]
+True Color Terminal: [iterm (macos)]
+
+Reference: [josean blog post](https://www.josean.com/posts/how-to-setup-neovim-2024)
+
+## Getting Started
 
 ### Windows
 
-```powershell
-curl -sL https://raw.githubusercontent.com/JeelDobariya38/Mini-NeoVim-Config/main/scripts/install.ps1 | powershell
-```
+- For Installation
+
+    ```powershell
+    git clone "https://github.com/JeelDobariya38/Mini-NeoVim-Config.git" "$env:LOCALAPPDATA\nvim"
+    ```
+
+- For Upgrading
+    ```powershell
+    git pull origin main
+    ```
 
 ### Linux/MacOS
 
-```bash
-curl -sL https://raw.githubusercontent.com/JeelDobariya38/Mini-NeoVim-Config/main/scripts/install.bash | bash
-```
+- For Installation
 
-## Updateing
+    ```bash
+    git clone "https://github.com/JeelDobariya38/Mini-NeoVim-Config.git" ~/.config/nvim
+    ```
 
-> [!WARNING]
-> **You want able to revert back..** All your nvim config will set to latest.. for more precious guide vist [docs/updating](docs/updating.md).
-
-### Windows
-
-```powershell
-Remove-Item $env:LOCALAPPDATA\nvim -Recurse -Force
-
-git clone "https://github.com/JeelDobariya38/Mini-NeoVim-Config.git" "$env:LOCALAPPDATA\nvim"
-```
-
-### Linux/MacOS
-
-```bash
-rm -rf ~/.config/nvim
-
-git clone "https://github.com/JeelDobariya38/Mini-NeoVim-Config.git" ~/.config/nvim
-```
+- For Upgrading
+    ```bash
+    git pull origin main
+    ```
 
 ## Development Commands (Linux)
 
