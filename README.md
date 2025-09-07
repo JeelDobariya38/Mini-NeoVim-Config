@@ -1,75 +1,62 @@
 # Mini NeoVim Config
 
-My pretty minimal neovim config....
+My pretty minimal neovim config, that I can use for coding & have consistent experience through out devices....
 
-## Getting Started (Installation)
-
-### Prerequisites
+## Prerequisites
 
 Neovim: [Install](https://github.com/neovim/neovim/blob/master/INSTALL.md)
+Nerdfont: [brew install --cask font-meslo-lg-nerd-font]
+Node Js: [brew install node]
+Ripgrep: [https://github.com/BurntSushi/ripgrep]
+True Color Terminal: [iterm (macos)]
+
+Reference: [josean blog post](https://www.josean.com/posts/how-to-setup-neovim-2024)
+
+## Getting Started
 
 ### Windows
 
-```powershell
-winget install Neovim.Neovim
-```
+- For Installation
 
-```powershell
-git clone "https://github.com/JeelDobariya38/Mini-NeoVim-Config.git" "$env:LOCALAPPDATA\nvim"
+    ```powershell
+    git clone "https://github.com/JeelDobariya38/Mini-NeoVim-Config.git" "$env:LOCALAPPDATA\nvim"
+    ```
 
-Remove-Item $env:LOCALAPPDATA\nvim\.git -Recurse -Force
-```
-
-```powershell
-nvim
-```
+- For Upgrading
+    ```powershell
+    git pull origin main
+    ```
 
 ### Linux/MacOS
 
-```bash
-brew install neovim
-```
+- For Installation
 
-```bash
-git clone "https://github.com/JeelDobariya38/Mini-NeoVim-Config.git" ~/.config/nvim
+    ```bash
+    git clone "https://github.com/JeelDobariya38/Mini-NeoVim-Config.git" ~/.config/nvim
+    ```
 
-rm -rf ~/.config/nvim/.git
-```
-
-```bash
-nvim
-```
-
-## Updateing
-
-> [!WARNING]
-> **You want able to revert back..** All your nvim config will set to latest.. for more precious guide vist [docs/updating](docs/updating.md).
-
-### Windows
-
-```powershell
-Remove-Item $env:LOCALAPPDATA\nvim -Recurse -Force
-
-git clone "https://github.com/JeelDobariya38/Mini-NeoVim-Config.git" "$env:LOCALAPPDATA\nvim"
-```
-
-### Linux/MacOS
-
-```bash
-rm -rf ~/.config/nvim
-
-git clone "https://github.com/JeelDobariya38/Mini-NeoVim-Config.git" ~/.config/nvim
-```
+- For Upgrading
+    ```bash
+    git pull origin main
+    ```
 
 ## Development Commands (Linux)
 
-```bash
-git clone "https://github.com/JeelDobariya38/Mini-NeoVim-Config.git" ~/.config/nvim-dev
+- For installation with ssh, into different dir.
+    
+    ```bash
+    git clone "git@github.com:JeelDobariya38/Mini-NeoVim-Config.git" ~/.config/nvim-dev
+    ```
 
-NVIM_APPNAME=nvim-dev nvim
-```
+- For run neovim
+   
+    ```bash
+    NVIM_APPNAME=nvim-dev nvim
+    ```
 
-```bash
-rm -rf ~/.config/nvim-dev
-```
+- For removing the installation.
+    
+    ```bash
+    rm -rf ~/.config/nvim-dev
+    ```
 
