@@ -2,6 +2,15 @@
 
 My pretty minimal neovim config, that I can use for coding & have consistent experience through out devices....
 
+## Table of Content
+
+- [Prerequisites](#prerequisites)
+- [Getting Started...](#getting-started)
+- [To The Specfic Version...](#to-the-specfic-version)
+- [Expirementing Around...](#expirementing-around-macoslinux)
+- [Backing up...](#backing-up)
+- [Deleting Mini Neovim Config...](#deleting-mini-neovim-config)
+  
 ## Prerequisites
 
 > [!WARNING]
