@@ -50,6 +50,20 @@ Reference: [josean blog post](https://www.josean.com/posts/how-to-setup-neovim-2
     git pull origin main
     ```
 
+## Specfic Version
+
+- For Specfic Version
+
+    ```bash
+    git checkout -q v[x.x.x]
+    ```
+
+- Back to latest
+
+    ```bash
+    git switch -
+    ```
+
 ## Development Commands (Linux)
 
 - For installation with ssh, into different dir.
