@@ -84,3 +84,8 @@ Reference: [josean blog post](https://www.josean.com/posts/how-to-setup-neovim-2
     rm -rf ~/.config/nvim-dev
     ```
 
+## Deleting Mini Neovim Config
+
+- Windows: `Remove-Item $env:LOCALAPPDATA\nvim -Recurse -Force`
+- MacOs/Linux: `rm -rf ~/.config/nvim`
+
