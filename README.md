@@ -16,7 +16,7 @@ My pretty minimal neovim config, that I can use for coding & have consistent exp
 
 Reference: [josean blog post](https://www.josean.com/posts/how-to-setup-neovim-2024)
 
-## Getting Started
+## Getting Started...
 
 ### Windows
 
@@ -54,7 +54,7 @@ Reference: [josean blog post](https://www.josean.com/posts/how-to-setup-neovim-2
     git pull
     ```
 
-## Specfic Version
+## To The Specfic Version...
 
 - For Specfic Version
 
@@ -68,7 +68,7 @@ Reference: [josean blog post](https://www.josean.com/posts/how-to-setup-neovim-2
     git switch -
     ```
 
-## Expirementing Around (MacOs/Linux)
+## Expirementing Around... (MacOs/Linux)
 
 This command are not recommended to use in production, It just for expirementing and play around... more like helpful in development...
 
@@ -90,7 +90,14 @@ This command are not recommended to use in production, It just for expirementing
     rm -rf ~/.config/nvim-dev
     ```
 
-## Deleting Mini Neovim Config
+## Backing up...
+
+This will take backup of your existing neovim config.
+
+- Windows: `Copy-Item -Path "$env:LOCALAPPDATA\nvim" -Destination "$env:LOCALAPPDATA\nvim.bak" -Recurse`
+- MacOs/Linux: `cp -r ~/.config/nvim ~/.config/nvim.bak`
+
+## Deleting Mini Neovim Config...
 
 - Windows: `Remove-Item $env:LOCALAPPDATA\nvim -Recurse -Force`
 - MacOs/Linux: `rm -rf ~/.config/nvim`
