@@ -19,13 +19,13 @@ Reference: [josean blog post](https://www.josean.com/posts/how-to-setup-neovim-2
 - For Installation
 
     ```powershell
-    git clone "https://github.com/JeelDobariya38/Mini-NeoVim-Config.git" "$LOCALAPPDATA/nvim"
+    git clone https://github.com/JeelDobariya38/Mini-NeoVim-Config.git $env:LOCALAPPDATA/nvim
     ```
 
 - For Upgrading
     
     ```powershell
-    cd "$LOCALAPPDATA/nvim"
+    cd $env:LOCALAPPDATA/nvim
     ```
 
     ```powershell
