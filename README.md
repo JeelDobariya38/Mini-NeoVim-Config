@@ -19,10 +19,15 @@ Reference: [josean blog post](https://www.josean.com/posts/how-to-setup-neovim-2
 - For Installation
 
     ```powershell
-    git clone "https://github.com/JeelDobariya38/Mini-NeoVim-Config.git" "$env:LOCALAPPDATA\nvim"
+    git clone "https://github.com/JeelDobariya38/Mini-NeoVim-Config.git" "$LOCALAPPDATA/nvim"
     ```
 
 - For Upgrading
+    
+    ```powershell
+    cd "$LOCALAPPDATA/nvim"
+    ```
+
     ```powershell
     git pull origin main
     ```
@@ -32,10 +37,15 @@ Reference: [josean blog post](https://www.josean.com/posts/how-to-setup-neovim-2
 - For Installation
 
     ```bash
-    git clone "https://github.com/JeelDobariya38/Mini-NeoVim-Config.git" ~/.config/nvim
+    git clone "https://github.com/JeelDobariya38/Mini-NeoVim-Config.git" "~/.config/nvim"
     ```
 
 - For Upgrading
+    
+    ```bash
+    cd "~/.config/nvim"
+    ```
+
     ```bash
     git pull origin main
     ```
