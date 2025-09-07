@@ -33,7 +33,7 @@ Reference: [josean blog post](https://www.josean.com/posts/how-to-setup-neovim-2
     ```
 
     ```powershell
-    git pull origin main
+    git pull
     ```
 
 ### Linux/MacOS
@@ -51,7 +51,7 @@ Reference: [josean blog post](https://www.josean.com/posts/how-to-setup-neovim-2
     ```
 
     ```bash
-    git pull origin main
+    git pull
     ```
 
 ## Specfic Version
