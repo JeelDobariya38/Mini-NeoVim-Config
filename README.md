@@ -42,13 +42,21 @@ Reference: [josean blog post](https://www.josean.com/posts/how-to-setup-neovim-2
 
 ## Development Commands (Linux)
 
-```bash
-git clone "https://github.com/JeelDobariya38/Mini-NeoVim-Config.git" ~/.config/nvim-dev
+- For installation with ssh, into different dir.
+    
+    ```bash
+    git clone "git@github.com:JeelDobariya38/Mini-NeoVim-Config.git" ~/.config/nvim-dev
+    ```
 
-NVIM_APPNAME=nvim-dev nvim
-```
+- For run neovim
+   
+    ```bash
+    NVIM_APPNAME=nvim-dev nvim
+    ```
 
-```bash
-rm -rf ~/.config/nvim-dev
-```
+- For removing the installation.
+    
+    ```bash
+    rm -rf ~/.config/nvim-dev
+    ```
 
