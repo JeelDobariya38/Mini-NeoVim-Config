@@ -2,7 +2,20 @@
 
 My pretty minimal neovim config, that I can use for coding & have consistent experience through out devices....
 
+## Table of Content
+
+- [Prerequisites](#prerequisites)
+- [Getting Started...](#getting-started)
+- [To The Specfic Version...](#to-the-specfic-version)
+- [Expirementing Around...](#expirementing-around-macoslinux)
+- [Backing up...](#backing-up)
+- [Deleting Mini Neovim Config...](#deleting-mini-neovim-config)
+  
 ## Prerequisites
+
+> [!WARNING]
+> If you being using neovim previously, Then take backup of your config, following setup can destroy your neovim config if it exist...
+> Also, if you already use neovim with your own workflow & just give my config a try.. then refer the section `Expirementing Around (MacOs/Linux)`  below readme.
 
 - True Color Terminal: `iterm (MacOs)`
 - Neovim:  [Install](https://github.com/neovim/neovim/blob/master/INSTALL.md) || `brew install neovim` || `winget install Neovim.Neovim`
@@ -12,7 +25,7 @@ My pretty minimal neovim config, that I can use for coding & have consistent exp
 
 Reference: [josean blog post](https://www.josean.com/posts/how-to-setup-neovim-2024)
 
-## Getting Started
+## Getting Started...
 
 ### Windows
 
@@ -29,7 +42,7 @@ Reference: [josean blog post](https://www.josean.com/posts/how-to-setup-neovim-2
     ```
 
     ```powershell
-    git pull origin main
+    git pull
     ```
 
 ### Linux/MacOS
@@ -47,10 +60,26 @@ Reference: [josean blog post](https://www.josean.com/posts/how-to-setup-neovim-2
     ```
 
     ```bash
-    git pull origin main
+    git pull
     ```
 
-## Development Commands (Linux)
+## To The Specfic Version...
+
+- For Specfic Version
+
+    ```bash
+    git checkout -q v[x.x.x]
+    ```
+
+- Back to latest
+
+    ```bash
+    git switch -
+    ```
+
+## Expirementing Around... (MacOs/Linux)
+
+This command are not recommended to use in production, It just for expirementing and play around... more like helpful in development...
 
 - For installation with ssh, into different dir.
     
@@ -69,4 +98,16 @@ Reference: [josean blog post](https://www.josean.com/posts/how-to-setup-neovim-2
     ```bash
     rm -rf ~/.config/nvim-dev
     ```
+
+## Backing up...
+
+This will take backup of your existing neovim config.
+
+- Windows: `Copy-Item -Path "$env:LOCALAPPDATA\nvim" -Destination "$env:LOCALAPPDATA\nvim.bak" -Recurse`
+- MacOs/Linux: `cp -r ~/.config/nvim ~/.config/nvim.bak`
+
+## Deleting Mini Neovim Config...
+
+- Windows: `Remove-Item $env:LOCALAPPDATA\nvim -Recurse -Force`
+- MacOs/Linux: `rm -rf ~/.config/nvim`
 
