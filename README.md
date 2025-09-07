@@ -37,13 +37,13 @@ Reference: [josean blog post](https://www.josean.com/posts/how-to-setup-neovim-2
 - For Installation
 
     ```bash
-    git clone "https://github.com/JeelDobariya38/Mini-NeoVim-Config.git" "~/.config/nvim"
+    git clone https://github.com/JeelDobariya38/Mini-NeoVim-Config.git ~/.config/nvim
     ```
 
 - For Upgrading
     
     ```bash
-    cd "~/.config/nvim"
+    cd ~/.config/nvim
     ```
 
     ```bash
