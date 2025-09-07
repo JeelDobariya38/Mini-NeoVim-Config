@@ -1,8 +1,29 @@
-vim.cmd("let g:netrw_liststyle = 3") -- nvim styling.
+vim.g.mapleader = " " -- set leader key to space
+vim.cmd("let g:netrw_liststyle = 3") -- nvim styling
 
 
+local keymap = vim.keymap -- for conciseness
 local opt = vim.opt -- for conciseness.
 
+
+----------------------- General Keymaps -------------------
+
+-- use jk to exit insert mode
+keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
+
+
+-- clear search highlights
+keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
+
+
+-- no arrow keys
+keymap.set({'n', 'v', 's', 'o'}, '<Up>', '<cmd>echo "Nop! No up arrow for you use k!!!"<CR>', {desc = "Hardcore neovim", noremap = true})
+keymap.set({'n', 'v', 's', 'o'}, '<Down>', '<cmd>echo "Nop! No down arrow for you use j!!!"<CR>', {desc = "Hardcore neovim", noremap = true})
+keymap.set({'n', 'v', 's', 'o'}, '<Left>', '<cmd>echo "Nop! No left arrow for you use h!!!"<CR>', {desc = "Hardcore neovim", noremap = true})
+keymap.set({'n', 'v', 's', 'o'}, '<Right>', '<cmd>echo "Nop! No right arrow for you use l!!!"<CR>', {desc = "Hardcore neovim", noremap = true})
+
+
+---------------------- General Settings -------------------
 
 -- numbers
 opt.number = true
@@ -29,13 +50,6 @@ opt.signcolumn = "auto"
 
 -- line wrapping
 opt.wrap = false
-
-
--- no arrow keys
-vim.keymap.set({'n', 'v', 's', 'o'}, '<Up>', '<cmd>echo "Nop! No up arrow for you use k!!!"<CR>', {desc = "Hardcore neovim", noremap = true})
-vim.keymap.set({'n', 'v', 's', 'o'}, '<Down>', '<cmd>echo "Nop! No down arrow for you use j!!!"<CR>', {desc = "Hardcore neovim", noremap = true})
-vim.keymap.set({'n', 'v', 's', 'o'}, '<Left>', '<cmd>echo "Nop! No left arrow for you use h!!!"<CR>', {desc = "Hardcore neovim", noremap = true})
-vim.keymap.set({'n', 'v', 's', 'o'}, '<Right>', '<cmd>echo "Nop! No right arrow for you use l!!!"<CR>', {desc = "Hardcore neovim", noremap = true})
 
 
 -- no mouse
