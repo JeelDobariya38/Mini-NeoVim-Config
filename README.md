@@ -4,11 +4,11 @@ My pretty minimal neovim config, that I can use for coding & have consistent exp
 
 ## Prerequisites
 
-Neovim: [Install](https://github.com/neovim/neovim/blob/master/INSTALL.md)
-Nerdfont: [brew install --cask font-meslo-lg-nerd-font]
-Node Js: [brew install node]
-Ripgrep: [https://github.com/BurntSushi/ripgrep]
-True Color Terminal: [iterm (macos)]
+- True Color Terminal: `iterm (MacOs)`
+- Neovim:  [Install](https://github.com/neovim/neovim/blob/master/INSTALL.md) || `brew install neovim` || `winget install Neovim.Neovim`
+- Nerdfont: [Install (MeshloLG)](https://www.nerdfonts.com/font-downloads) || `brew install --cask font-meslo-lg-nerd-font`
+- Ripgrep: `brew install ripgrep`
+- Node Js (Optional): `brew install node`
 
 Reference: [josean blog post](https://www.josean.com/posts/how-to-setup-neovim-2024)
 
@@ -19,10 +19,15 @@ Reference: [josean blog post](https://www.josean.com/posts/how-to-setup-neovim-2
 - For Installation
 
     ```powershell
-    git clone "https://github.com/JeelDobariya38/Mini-NeoVim-Config.git" "$env:LOCALAPPDATA\nvim"
+    git clone "https://github.com/JeelDobariya38/Mini-NeoVim-Config.git" "$LOCALAPPDATA/nvim"
     ```
 
 - For Upgrading
+    
+    ```powershell
+    cd "$LOCALAPPDATA/nvim"
+    ```
+
     ```powershell
     git pull origin main
     ```
@@ -32,10 +37,15 @@ Reference: [josean blog post](https://www.josean.com/posts/how-to-setup-neovim-2
 - For Installation
 
     ```bash
-    git clone "https://github.com/JeelDobariya38/Mini-NeoVim-Config.git" ~/.config/nvim
+    git clone "https://github.com/JeelDobariya38/Mini-NeoVim-Config.git" "~/.config/nvim"
     ```
 
 - For Upgrading
+    
+    ```bash
+    cd "~/.config/nvim"
+    ```
+
     ```bash
     git pull origin main
     ```
