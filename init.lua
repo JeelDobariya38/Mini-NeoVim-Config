@@ -59,3 +59,6 @@ opt.splitbelow = true
 -- clipboard settings
 opt.clipboard:append("unnamedplus") -- set system clipboard as defualt.
 
+-- turn off swapfile
+opt.swapfile = false
+
