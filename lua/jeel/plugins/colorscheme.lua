@@ -2,6 +2,9 @@ return {
     {
         "folke/tokyonight.nvim",
         priority = 1000,
-        config = vim.cmd([[colorscheme tokyonight]])
+        config = function()
+            -- load the colorscheme here
+            vim.cmd([[colorscheme tokyonight]])
+        end,
     }
 }
