@@ -25,7 +25,15 @@ keymap.set("n", "<leader>se", "<C-w>=", { desc = "Make splits equal size" }) -- 
 keymap.set("n", "<leader>sx", "<cmd>close<CR>", { desc = "Close current split" }) -- close current split window
 
 
--- no arrow keys
+-- tabs management
+keymap.set("n", "<leader>to", "<cmd>tabnew<CR>", { desc = "Open new tab" }) -- open new tab
+keymap.set("n", "<leader>tx", "<cmd>tabclose<CR>", { desc = "Close current tab" }) -- close current tab
+keymap.set("n", "<leader>tn", "<cmd>tabn<CR>", { desc = "Go to next tab" }) --  go to next tab
+keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Go to previous tab" }) --  go to previous tab
+keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer in new tab" }) --  move current buffer to new tab
+
+
+-- no arrow keys (Hardcore vim)
 keymap.set({'n', 'v', 's', 'o'}, '<Up>', ':echo "Nop! No up arrow for you use k!!!"<CR>', {desc = "Hardcore neovim", noremap = true})
 keymap.set({'n', 'v', 's', 'o'}, '<Down>', ':echo "Nop! No down arrow for you use j!!!"<CR>', {desc = "Hardcore neovim", noremap = true})
 keymap.set({'n', 'v', 's', 'o'}, '<Left>', ':echo "Nop! No left arrow for you use h!!!"<CR>', {desc = "Hardcore neovim", noremap = true})
