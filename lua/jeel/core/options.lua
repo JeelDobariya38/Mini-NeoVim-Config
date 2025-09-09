@@ -24,7 +24,7 @@ opt.cursorline = true
 -- appearance
 opt.termguicolors = true
 opt.background = "dark"
-opt.signcolumn = "auto"
+opt.signcolumn = "yes"
 
 
 -- line wrapping
