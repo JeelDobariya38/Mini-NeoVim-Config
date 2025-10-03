@@ -13,5 +13,13 @@ end
 
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup("jeel.plugins")
+require("lazy").setup("jeel.plugins", {
+    checker = {
+        enabled = true,
+        notify = false,
+    },
+    change_detection = {
+        notify = false,
+    },
+})
 
