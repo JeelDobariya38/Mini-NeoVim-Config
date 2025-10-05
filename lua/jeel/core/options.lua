@@ -32,7 +32,7 @@ opt.wrap = false
 
 
 -- no mouse
-opt.mouse = ""
+opt.mouse = "a"
 
 
 -- search settings
