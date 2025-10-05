@@ -25,7 +25,9 @@ return {
             -- list of servers for mason to install
             ensure_installed = {
                 "lua_ls",
-                "kotlin_lsp"
+                "kotlin_lsp",
+                "pylsp",
+                "vimls"
             },
         })
     end,
