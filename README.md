@@ -18,7 +18,7 @@ My pretty minimal neovim config, that I can use for coding & have consistent exp
 > Also, if you already use neovim with your own workflow & just give my config a try.. then refer the section `Expirementing Around (MacOs/Linux)`  below readme.
 
 - True Color Terminal: `iterm (MacOs)`
-- Neovim:  [Install](https://github.com/neovim/neovim/blob/master/INSTALL.md) || `brew install neovim` || `winget install Neovim.Neovim`
+- Neovim(v0.11.x):  [Install](https://github.com/neovim/neovim/blob/master/INSTALL.md) || `brew install neovim` || `winget install Neovim.Neovim`
 - Nerdfont: [Install (MeshloLG)](https://www.nerdfonts.com/font-downloads) || `brew install --cask font-meslo-lg-nerd-font`
 - Ripgrep: `brew install ripgrep`
 - Node Js (Optional): `brew install node`
