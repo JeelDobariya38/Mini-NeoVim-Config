@@ -26,8 +26,7 @@ return {
             ensure_installed = {
                 "lua_ls",
                 "kotlin_lsp",
-                "pylsp",
-                "vimls"
+                "gradle_ls"
             },
         })
     end,
